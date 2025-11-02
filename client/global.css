@@ -1,0 +1,334 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .line-clamp-4 {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .line-clamp-1 {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  /* Hide scrollbars for mobile tab navigation */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Mobile touch improvements */
+  .touch-manipulation {
+    touch-action: manipulation;
+  }
+}
+
+@layer base {
+  /**
+   * Tailwind CSS theme
+   * tailwind.config.ts expects the following color variables to be expressed as HSL values.
+   * A different format will require also updating the theme in tailwind.config.ts.
+  */
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 32 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 32 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 32 25% 15%;
+
+    --primary: 45 100% 51%;
+    --primary-foreground: 32 25% 15%;
+
+    --secondary: 45 30% 95%;
+    --secondary-foreground: 32 25% 15%;
+
+    --muted: 45 15% 96%;
+    --muted-foreground: 32 15% 45%;
+
+    --accent: 38 95% 62%;
+    --accent-foreground: 32 25% 15%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --error: 0 84% 60%;
+    --error-foreground: 0 0% 98%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 32 25% 15%;
+
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 98%;
+
+    --border: 45 20% 90%;
+    --input: 45 20% 92%;
+    --ring: 45 100% 51%;
+
+    --premium-gold: 45 100% 51%;
+    --premium-gold-dark: 38 85% 45%;
+    --premium-bronze: 30 75% 45%;
+    --premium-dark: 32 25% 15%;
+    --premium-light: 45 30% 98%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 32 25% 8%;
+    --foreground: 45 30% 95%;
+
+    --card: 32 25% 10%;
+    --card-foreground: 45 30% 95%;
+
+    --popover: 32 25% 10%;
+    --popover-foreground: 45 30% 95%;
+
+    --primary: 45 100% 65%;
+    --primary-foreground: 32 25% 15%;
+
+    --secondary: 32 20% 18%;
+    --secondary-foreground: 45 30% 95%;
+
+    --muted: 32 20% 18%;
+    --muted-foreground: 45 15% 70%;
+
+    --accent: 38 95% 70%;
+    --accent-foreground: 32 25% 15%;
+
+    --destructive: 0 72.2% 50.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --error: 0 72% 51%;
+    --error-foreground: 0 0% 98%;
+
+    --warning: 48 96% 53%;
+    --warning-foreground: 32 25% 15%;
+
+    --success: 142 72% 45%;
+    --success-foreground: 0 0% 98%;
+
+    --border: 32 20% 25%;
+    --input: 32 20% 25%;
+    --ring: 45 100% 65%;
+
+    --premium-gold: 45 100% 65%;
+    --premium-gold-dark: 38 85% 55%;
+    --premium-bronze: 30 75% 55%;
+    --premium-dark: 32 25% 15%;
+    --premium-light: 45 15% 20%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-shadow-sm {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  }
+
+  .text-shadow {
+    text-shadow:
+      0 1px 3px rgba(0, 0, 0, 0.12),
+      0 1px 2px rgba(0, 0, 0, 0.24);
+  }
+
+  .text-shadow-lg {
+    text-shadow:
+      0 4px 8px rgba(0, 0, 0, 0.25),
+      0 2px 4px rgba(0, 0, 0, 0.22);
+  }
+
+  .premium-gradient {
+    background: linear-gradient(
+      135deg,
+      hsl(var(--premium-gold)) 0%,
+      hsl(var(--premium-bronze)) 100%
+    );
+  }
+
+  .premium-gradient-dark {
+    background: linear-gradient(
+      135deg,
+      hsl(var(--premium-bronze)) 0%,
+      hsl(var(--premium-dark)) 100%
+    );
+  }
+
+  .glass-effect {
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .premium-shadow {
+    box-shadow: 0 25px 50px -12px rgba(45, 100, 51, 0.25);
+  }
+
+  .premium-hover {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .premium-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 32px 64px -12px rgba(45, 100, 51, 0.35);
+  }
+
+  /* Smooth scrolling with header offset */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Anchor offset for fixed header on mobile */
+  @media (max-width: 1023px) {
+    section[id] {
+      scroll-margin-top: 140px; /* Increased for mobile header + nav height */
+    }
+  }
+
+  /* Anchor offset for fixed header on desktop */
+  @media (min-width: 1024px) {
+    section[id] {
+      scroll-margin-top: 200px; /* Adjust for desktop header height */
+    }
+  }
+
+  /* Prevent content from being hidden under fixed header */
+  @media (max-width: 1023px) {
+    body {
+      padding-top: 0; /* Let sections handle their own spacing */
+    }
+  }
+
+  /* Mobile-first responsive improvements */
+  @media (max-width: 640px) {
+    /* Ensure minimum touch targets for mobile */
+    button, .btn, input[type="submit"] {
+      min-height: 44px;
+      min-width: 44px;
+    }
+
+    /* Prevent horizontal overflow on mobile */
+    body {
+      overflow-x: hidden;
+    }
+
+    /* Improve text readability on mobile */
+    .text-xs {
+      font-size: 0.75rem; /* Ensure minimum 12px font size */
+    }
+
+    /* Improve modal spacing on mobile */
+    .modal-content {
+      padding: 1rem;
+      margin: 0.5rem;
+    }
+
+    /* Better grid spacing on mobile */
+  .grid {
+    gap: 1rem;
+  }
+
+  /* Table responsive wrapper for all screen sizes */
+  .table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(156, 163, 175, 0.5) transparent;
+  }
+
+  .table-container::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  .table-container::-webkit-scrollbar-track {
+    background: rgba(156, 163, 175, 0.1);
+    border-radius: 3px;
+  }
+
+  .table-container::-webkit-scrollbar-thumb {
+    background: rgba(156, 163, 175, 0.5);
+    border-radius: 3px;
+  }
+
+  .table-container::-webkit-scrollbar-thumb:hover {
+    background: rgba(156, 163, 175, 0.7);
+  }
+
+    /* Better table responsiveness */
+    .table-responsive {
+      display: block;
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      border-radius: 8px;
+    }
+
+    /* Improved table cells for mobile */
+    table td {
+      padding: 0.5rem !important;
+      font-size: 0.875rem;
+      white-space: nowrap;
+    }
+
+    /* Better truncation for long content */
+    .mobile-truncate {
+      max-width: 150px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+
+  /* Tablet improvements */
+  @media (min-width: 641px) and (max-width: 1023px) {
+    .grid-cols-auto-fit {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+  }
+}
