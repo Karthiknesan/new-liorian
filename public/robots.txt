@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://lioriantechnology.in/sitemap.xml
+
+# Disallow admin areas for security
+Disallow: /admin-dashboard
+Disallow: /staff-dashboard
+Disallow: /api/
+Disallow: /*.json$
+
+# Allow important pages
+Allow: /
+Allow: /services
+Allow: /about
+Allow: /contact
+Allow: /blog
+Allow: /success-stories
+
+# Crawl-delay for bots
+Crawl-delay: 1

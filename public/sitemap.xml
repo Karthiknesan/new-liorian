@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://liorian-technology.com/</loc>
+    <lastmod>2024-12-17T00:00:00+00:00</lastmod>
+    <priority>1.0</priority>
+    <changefreq>daily</changefreq>
+    <image:image>
+      <image:loc>https://cdn.builder.io/api/v1/image/assets%2F6c52e1efd0ac4e7c9c12a5a6977dd5d7%2Fe3185f04fd614e3a9763847c5c7ef671?format=webp&width=1200</image:loc>
+      <image:title>Liorian Technology - Professional IT Training</image:title>
+      <image:caption>Leading IT training institute with 100% placement guarantee</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Services/Courses Pages -->
+  <url>
+    <loc>https://liorian-technology.com/services</loc>
+    <lastmod>2024-12-17T00:00:00+00:00</lastmod>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- Individual Course Pages -->
+  <url>
+    <loc>https://liorian-technology.com/courses/python-fullstack</loc>
+    <lastmod>2024-12-17T00:00:00+00:00</lastmod>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://liorian-technology.com/courses/data-science</loc>
+    <lastmod>2024-12-17T00:00:00+00:00</lastmod>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://liorian-technology.com/courses/cloud-computing</loc>
+    <lastmod>2024-12-17T00:00:00+00:00</lastmod>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://liorian-technology.com/courses/cybersecurity</loc>
+    <lastmod>2024-12-17T00:00:00+00:00</lastmod>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://liorian-technology.com/courses/digital-marketing</loc>
+    <lastmod>2024-12-17T00:00:00+00:00</lastmod>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://liorian-technology.com/courses/business-intelligence</loc>
+    <lastmod>2024-12-17T00:00:00+00:00</lastmod>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://liorian-technology.com/courses/banking-operations</loc>
+    <lastmod>2024-12-17T00:00:00+00:00</lastmod>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- About Us Page -->
+  <url>
+    <loc>https://liorian-technology.com/about</loc>
+    <lastmod>2024-12-17T00:00:00+00:00</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Success Stories Page -->
+  <url>
+    <loc>https://liorian-technology.com/success-stories</loc>
+    <lastmod>2024-12-17T00:00:00+00:00</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- Blog Pages -->
+  <url>
+    <loc>https://liorian-technology.com/blog</loc>
+    <lastmod>2024-12-17T00:00:00+00:00</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- Contact Page -->
+  <url>
+    <loc>https://liorian-technology.com/contact</loc>
+    <lastmod>2024-12-17T00:00:00+00:00</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Learning Path Page -->
+  <url>
+    <loc>https://liorian-technology.com/learning-path</loc>
+    <lastmod>2024-12-17T00:00:00+00:00</lastmod>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- Career/Placement Pages -->
+  <url>
+    <loc>https://liorian-technology.com/placements</loc>
+    <lastmod>2024-12-17T00:00:00+00:00</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://liorian-technology.com/career-guidance</loc>
+    <lastmod>2024-12-17T00:00:00+00:00</lastmod>
+    <priority>0.7</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- Industry-specific landing pages -->
+  <url>
+    <loc>https://liorian-technology.com/software-development-jobs</loc>
+    <lastmod>2024-12-17T00:00:00+00:00</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://liorian-technology.com/data-scientist-jobs</loc>
+    <lastmod>2024-12-17T00:00:00+00:00</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://liorian-technology.com/cloud-engineer-jobs</loc>
+    <lastmod>2024-12-17T00:00:00+00:00</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- FAQ Page -->
+  <url>
+    <loc>https://liorian-technology.com/faq</loc>
+    <lastmod>2024-12-17T00:00:00+00:00</lastmod>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Admission/Application Pages -->
+  <url>
+    <loc>https://liorian-technology.com/admission</loc>
+    <lastmod>2024-12-17T00:00:00+00:00</lastmod>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- Location-based pages -->
+  <url>
+    <loc>https://liorian-technology.com/bangalore-training</loc>
+    <lastmod>2024-12-17T00:00:00+00:00</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Terms & Conditions -->
+  <url>
+    <loc>https://liorian-technology.com/terms</loc>
+    <lastmod>2024-12-17T00:00:00+00:00</lastmod>
+    <priority>0.3</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+
+  <!-- Privacy Policy -->
+  <url>
+    <loc>https://liorian-technology.com/privacy</loc>
+    <lastmod>2024-12-17T00:00:00+00:00</lastmod>
+    <priority>0.3</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+
+</urlset>
